@@ -13,6 +13,16 @@
       "eas": {
         "projectId": "33ec3180-fb8c-42f6-b81a-89899cc44a98"
       }
-    }
+    },
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/33ec3180-fb8c-42f6-b81a-89899cc44a98"
+    },
+    "android": {
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "ios": {}
   }
 }

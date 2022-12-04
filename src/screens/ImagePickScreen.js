@@ -62,7 +62,7 @@ const ImagePickScreen = () => {
       console.log("Recognized text:", result.text);
       textCtx.setText(result.text)
       // textCtx.setText(result.text)
-      navigation.navigate("Home");
+      navigation.navigate("Main");
     };
 
   return (

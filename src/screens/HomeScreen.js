@@ -1,4 +1,4 @@
-import { View, Text, Pressable, TextInput } from "react-native";
+import { View, Text, Pressable, TextInput, SafeAreaView } from "react-native";
 import React,{useContext,useState} from "react";
 import { useNavigation } from "@react-navigation/native";
 import { AntDesign } from "@expo/vector-icons";
@@ -32,16 +32,16 @@ const HomeScreen = () => {
           style={{ textAlignVertical: "top" }}
           multiline={true}
           value={textCtx.text}
-          onChange={(text) => textCtx.setText(text)}
+          onChangeText={textCtx.setText}
           placeholder={"Take Notes ..."}
           className=" h-32 w-full rounded-md"
         />
-        <Pressable className="flex-row justify-end">
+        <Pressable className="absolute bottom-0 right-0">
           <Ionicons name="copy-outline" size={24} color="black" />
         </Pressable>
       </View>
 
-      <View className="mt-2 ">
+      <View className="mt-2">
         <Pressable
           className="items-center bg-blue-500 rounded p-1"
           onPress={() => navigation.navigate("ImagePick")}
